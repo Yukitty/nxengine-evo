@@ -27,6 +27,6 @@ dog with you?<YNJ0000<CLR
 
 #0420
 <KEY<DNP0420<MSG<GIT1035<IT+0035
-Found =Curly's Underwear=.<NOD<END
+Found =Curly's Panties=.<NOD<END
 
 

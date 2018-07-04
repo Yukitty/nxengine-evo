@@ -153,7 +153,7 @@ known to portend the future.<WAI9999<END
 #5034
 <MSG<TURMa Pignon<WAI9999<END
 #5035
-<MSG<TURCurly's Underwear<WAI9999<END
+<MSG<TURCurly's Panties<WAI9999<END
 #5036
 <MSG<TURAlien Medal<WAI9999<END
 #5037
