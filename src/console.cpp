@@ -40,6 +40,7 @@ bool enable;
 		enable = num;
 	
 	game.debug.god = enable;
+	Respond("Player is now %s", enable ? "invulnerable" : "mortal");
 }
 
 static void __script(std::vector<std::string> *args, int num)
