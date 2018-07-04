@@ -155,7 +155,7 @@ known to portend the future.<WAI9999<END
 #5035
 <MSG<TURCurly's Panties<WAI9999<END
 #5036
-<MSG<TURAlien Medal<WAI9999<END
+<MSG<TURIkachan Medal<WAI9999<END
 #5037
 <MSG<TURChaco's Lipstick<WAI9999<END
 #5038
