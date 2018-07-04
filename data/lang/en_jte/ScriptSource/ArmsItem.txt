@@ -281,7 +281,7 @@ cell, look for the hideout hidden
 in the plantation.<NOD<CLRIf my mother is yet safe,
 she'll be there, coming up
 with a counterplan.<NOD<CLRPlease. Help my mother.<NOD<CLRThe password is
-"Litagano Motscoud".<NOD<CLR<FL+1024<FRE<MSGThe letter ends here...<WAI9999<END
+"Yrots Evac".<NOD<CLR<FL+1024<FRE<MSGThe letter ends here...<WAI9999<END
 #6027
 <MSG<TURNecessary to make a rocket.
 Pride of Itoh, the cowardly man.<WAI9999<END
