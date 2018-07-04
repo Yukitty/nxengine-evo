@@ -78,7 +78,7 @@ int font_draw(int x, int y, const std::string& text, uint32_t color, bool is_sha
 		{
 			if (rendering)
 			{
-				Sprites::draw_sprite((x/SCALE), (y/SCALE)+1, SPR_TEXTBULLET);
+				Sprites::draw_sprite((x/SCALE), (y/SCALE)+3, SPR_TEXTBULLET);
 			}
 		}
 		else if (rendering && ch != ' ')
