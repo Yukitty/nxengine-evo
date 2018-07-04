@@ -566,7 +566,8 @@ int x, y;
 		break;
 		
 		case BK_FASTLEFT:		// Ironhead
-			map.parscroll_x += 6;
+			if (!game.paused)
+				map.parscroll_x += 6;
 			map.parscroll_y = 0;
 		break;
 		
@@ -754,7 +755,7 @@ int scroll_x, scroll_y;
 				//fixes drawing of debug tiles in Stream and Fall maps
 				if( ((game.curmap == 71) && (tilecode[t] == 0x41))
 				    ||
-				    ((game.curmap == 31) && (tilecode[t] == 0x46))
+				    ((game.curmap == 31) /*&& (tilecode[t] == 0x46)*/)
 				) {}
 				else
 					if ((tileattr[t] & TA_FOREGROUND) == foreground)
@@ -1160,7 +1161,7 @@ Object *FindObjectByID2(int id2)
 	Object *result = ID2Lookup[id2];
 	
 	if (result)
-		staterr("FindObjectByID2: ID2 %04d found: type %s; coords: (%d, %d)", id2, DescribeObjectType(ID2Lookup[id2]->type), ID2Lookup[id2]->x / CSFI,ID2Lookup[id2]->y / CSFI);
+		stat("FindObjectByID2: ID2 %04d found: type %s; coords: (%d, %d)", id2, DescribeObjectType(ID2Lookup[id2]->type), ID2Lookup[id2]->x / CSFI,ID2Lookup[id2]->y / CSFI);
 	else
 		staterr("FindObjectByID2: no such object %04d", id2);
 	
