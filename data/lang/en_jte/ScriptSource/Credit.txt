@@ -36,7 +36,7 @@
 [Lives alone]0000-0032
 [  Santa]0017-0064
 [The colored Mimiga]0000-0032
-[  Chaco]0018-0064
+[  Chako]0018-0064
 [Power Room watcher]0000-0032
 [  Malco]0025-0064
 -0063

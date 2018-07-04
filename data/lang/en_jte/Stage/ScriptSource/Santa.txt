@@ -53,11 +53,11 @@ around here.<NOD
 If you want to go searching
 farther in,<NOD
 you'll have to pass through the
-fireplace in Chaco's house...<NOD<FL+0241<END
+fireplace in Chako's house...<NOD<FL+0241<END
 #0503
 <KEY<MSGYou can get to the inner part of
 Grasstown by passing through the
-fireplace in Chaco's house.<NOD<END
+fireplace in Chako's house.<NOD<END
 #0504
 <KEY<MSGYou need some =Charcoal=?<NOD
 You can take what's in my
