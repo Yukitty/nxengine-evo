@@ -67,5 +67,5 @@ fireplace, if you like.<NOD<END
 #0506
 <KEY<MSGI heard some kind of crash outside
 a little while ago.<NOD
-That and screams of terror...<NOD<END
+That, and screams of terror...<NOD<END
 
