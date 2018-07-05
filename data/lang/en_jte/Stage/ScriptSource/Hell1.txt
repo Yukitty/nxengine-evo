@@ -13,7 +13,7 @@
 
 #0095
 <EQ+0256<MS2<TUR
-<SOU0043<GIT1022Counter activated.<NOD<GIT0000<EVE0096
+<SOU0043<GIT1022Stopwatch activated.<NOD<GIT0000<EVE0096
 
 #0096
 <MSGYou feel a black wind blow

@@ -19,7 +19,7 @@
 #0201
 <KEY<FLJ1700:0202<FL+1700<SOU0022<CNP0200:0021:0000
 <MSGOpened the treasure chest.<NOD<GIT1022<IT+0022<CLR
-<CMU0010Got the =Nikumaru Counter=!<WAI0160<NOD<RMU<EVE0202
+<CMU0010Got the =29 Cycle Counter=!<WAI0160<NOD<RMU<EVE0202
 #0202
 <KEY<MSGSomething's written here...<NOD<CLR<TURThis item is a tribute to your
 determination. Glory to all
