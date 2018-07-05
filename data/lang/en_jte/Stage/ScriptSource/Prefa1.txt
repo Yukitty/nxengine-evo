@@ -26,14 +26,14 @@ Would you like to read it?<YNJ0000<CLR<TURExploration of the island's
 interior would be more effectively
 accomplished, I suspect,<NOD<CLRhad we equipment to facilitate
 aerial movement.<NOD<CLRThus, I have duly begun
-development upon the "Booster".<NOD<CLRDevelopment of this flying apparatus
+development of the "Booster".<NOD<CLRDevelopment of this flying apparatus
 will take place in two stages,
 versions 0.8 and 2.0.<NOD<CLRMy plans call for v0.8 to be
 equippable and to allow for a
 certain amount of hovering.<NOD<CLRI'm sure I can complete v2.0,
-provided I only live long enough.<NOD<CLRIt promises to be an even more
+provided I live long enough.<NOD<CLRIt promises to be an even more
 useful item.<NOD<CLO
 <FLJ0161:0000<WAI0050<MS2
-    Provided I only live...<WAI0050<NOD<END
+    Provided I live...<WAI0050<NOD<END
 
 
