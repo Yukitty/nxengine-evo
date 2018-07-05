@@ -62,7 +62,7 @@
 [  Chaba]0027-0064
 [The labyrinth's]0000-0016
 [ resident physician]0000-0016
-[  Dr. Gero]0028-0064
+[  Dr. Ribbit]0028-0064
 [I am a nurse!]0000-0032
 [  Nurse Hasumi]0029-0064
 -0063
