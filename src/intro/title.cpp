@@ -218,7 +218,7 @@ static void selectoption(int index)
 
 		case 2:		// Mods
 		{
-			game.pause(GP_OPTIONS);
+			game.pause(GP_MODS);
 		}
 		break;
 

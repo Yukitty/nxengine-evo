@@ -43,6 +43,7 @@ enum GameModes
 	
 	GP_PAUSED,			// pausemode: Pause (use game.pause())
 	GP_OPTIONS,			// pausemode: Options (use game.pause())
+	GP_MODS,
 	
 	NUM_GAMEMODES
 };
