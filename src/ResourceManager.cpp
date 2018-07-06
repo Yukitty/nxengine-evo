@@ -69,9 +69,44 @@ void ResourceManager::shutdown()
 std::string ResourceManager::getLocalizedPath(const std::string& filename)
 {
     std::string _tryPath;
-
 #if defined(__linux__)
     char *home = getenv("HOME");
+#endif
+
+	// Load from mod first
+	if (settings->mod[0] != '\0')
+	{
+#if defined(__linux__)
+		if (home != NULL)
+		{
+		    _tryPath=std::string(home)+"/.local/share/nxengine/mods/"+std::string(settings->mod)+"/"+filename;
+		    if (fileExists(_tryPath))
+		    {
+		        return _tryPath;
+		    }
+		}
+
+		_tryPath="/usr/share/nxengine/mods/"+std::string(settings->mod)+"/"+filename;
+		if (fileExists(_tryPath))
+		{
+		    return _tryPath;
+		}
+
+		_tryPath="/usr/local/share/nxengine/mods/"+std::string(settings->mod)+"/"+filename;
+		if (fileExists(_tryPath))
+		{
+		    return _tryPath;
+		}
+#endif
+
+		_tryPath="mods/"+std::string(settings->mod)+"/"+filename;
+		if (fileExists(_tryPath))
+		{
+			return _tryPath;
+		}
+	}
+
+#if defined(__linux__)
     if (home != NULL)
     {
         _tryPath=std::string(home)+"/.local/share/nxengine/data/lang/"+std::string(settings->language)+"/"+filename;

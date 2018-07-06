@@ -23,6 +23,7 @@ struct Settings
 	
 	in_action input_mappings[INPUT_COUNT];
 	char language[256];
+	char mod[256];
 };
 
 bool settings_load(Settings *settings=NULL);

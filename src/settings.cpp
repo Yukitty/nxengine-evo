@@ -12,7 +12,7 @@
 #include "common/stat.h"
 #include "common/misc.h"
 
-const uint32_t SETTINGS_VERSION = ( ( '3' << 24 ) + ( 'S' << 16 ) + ( 'X' << 8 ) + 'N' );		// serves as both a version and magic
+const uint32_t SETTINGS_VERSION = ( ( '4' << 24 ) + ( 'S' << 16 ) + ( 'X' << 8 ) + 'N' );		// serves as both a version and magic
 
 Settings normal_settings;
 Settings *settings = &normal_settings;
@@ -58,6 +58,7 @@ FILE *fp;
 	{
 		memset(setfile->language,0,256);
 		strncpy(setfile->language,"english", 255);
+		memset(setfile->mod,0,256);
 	}
 
 	return 0;
@@ -88,6 +89,7 @@ bool settings_load(Settings *setfile)
 		setfile->rumble = false;
 		memset(setfile->language,0,256);
 		strncpy(setfile->language,"english", 255);
+		memset(setfile->mod,0,256);
 		
 		return 1;
 	}
