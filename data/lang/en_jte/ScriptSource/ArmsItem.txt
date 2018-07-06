@@ -127,7 +127,7 @@ known to portend the future.<WAI9999<END
 #5021
 <MSG<TURCurly's Air Tank<WAI9999<END
 #5022
-<MSG<TURNikumaru Counter<WAI9999<END
+<MSG<TURNikumaru Stopwatch<WAI9999<END
 #5023
 <MSG<TURBooster v2.0<WAI9999<END
 #5024
