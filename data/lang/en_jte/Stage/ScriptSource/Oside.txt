@@ -47,12 +47,12 @@ you'd best hurry.<NOD<END
 <MSG<FAC0010Hold on tight.<NOD<CLO<FAC0000
 <ANP0410:0020:0002<WAI0250
 <ANP0410:0010:0002<WAI0200
-<MSGAnd so was your escape from
-the island successful.<WAI0200<CLRBefore long, the Doctor began
+<MSGAnd so, your escape from
+the island was successful.<WAI0200<CLRBefore long, the Doctor began
 his attack on the earth, using
 the floating island as a base.<WAI0200<CLRWere the countries of the earth
 able to withstand the Doctor's
-assault?<WAI0200<CLR<FAO0002Either way, it made no
+assault?<WAI0200<CLR<FAO0002Either way, it makes no
 difference to you.<WAI0200<CLRTogether, deep in the heart
 of the mountains, far from
 the Doctor's reach,<WAI0200<CLRyou and Kazuma quietly lived
