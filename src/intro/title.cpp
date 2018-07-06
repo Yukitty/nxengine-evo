@@ -65,13 +65,13 @@ static void draw_title()
 	// draw menu
 
 	int cx = (SCREEN_WIDTH / 2) - 32;
-	int cy = (SCREEN_HEIGHT / 2) + 8;
+	int cy = (SCREEN_HEIGHT / 2) - 8;
 
-    const char* mymenus[] = {"New game","Load game", "Options", "Quit"};
+    const char* mymenus[] = {"New game","Load game", "Mods", "Options", "Quit", NULL};
 
-	TextBox::DrawFrame(cx-32,cy-16,128,80);
+	TextBox::DrawFrame(cx-22,cy-8,107,88);
 
-	for(int i=0;i<=3;i++)
+	for(int i=0;mymenus[i];i++)
 	{
 	    font_draw(cx+10,cy, _(mymenus[i]));
 		if (i == title.cursel)
@@ -79,7 +79,7 @@ static void draw_title()
 			draw_sprite(cx - 16, cy - 1, title.sprite, title.selframe);
 		}
 		
-		cy += 12;
+		cy += 14;
 	}
 
 	// animate character
@@ -136,14 +136,14 @@ static void handle_input()
 	if (justpushed(DOWNKEY))
 	{
 		sound(SND_MENU_MOVE);
-		if (++title.cursel >= 4)
+		if (++title.cursel >= 5)
 			title.cursel = 0;
 	}
 	else if (justpushed(UPKEY))
 	{
 		sound(SND_MENU_MOVE);
 		if (--title.cursel < 0)
-			title.cursel = 3;
+			title.cursel = 4;
 	}
 	
 	if (buttonjustpushed() || justpushed(ENTERKEY))
@@ -216,13 +216,19 @@ static void selectoption(int index)
 		}
 		break;
 
-		case 2:		// Options
+		case 2:		// Mods
+		{
+			game.pause(GP_OPTIONS);
+		}
+		break;
+
+		case 3:		// Options
 		{
 //			music(0);
 			game.pause(GP_OPTIONS);
 		}
 		break;
-		case 3:		// Quit
+		case 4:		// Quit
 		{
 			music(0);
 			game.running = false;
