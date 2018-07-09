@@ -306,6 +306,62 @@ int nEntities;
 				    // now that it's all set up, execute OnSpawn,
 				    // since we didn't do it in CreateObject.
 				    o->OnSpawn();
+
+				    stat("spawning extra motion wall");
+				    o = CreateObject(((x) * TILE_W) * CSFI, \
+										 ((y - TILE_H) * TILE_H) * CSFI, type,
+										 0, 0, dir, NULL, CF_NO_SPAWN_EVENT);
+				    o->id1 = id1;
+				    o->id2 = id2;
+				    o->flags |= flags;
+				
+				    ID2Lookup[o->id2] = o;
+				
+				    // now that it's all set up, execute OnSpawn,
+				    // since we didn't do it in CreateObject.
+				    o->OnSpawn();
+
+				    stat("spawning extra motion wall");
+				    o = CreateObject(((x+22) * TILE_W) * CSFI, \
+										 ((y - TILE_H) * TILE_H) * CSFI, type,
+										 0, 0, dir, NULL, CF_NO_SPAWN_EVENT);
+				    o->id1 = id1;
+				    o->id2 = id2;
+				    o->flags |= flags;
+				
+				    ID2Lookup[o->id2] = o;
+				
+				    // now that it's all set up, execute OnSpawn,
+				    // since we didn't do it in CreateObject.
+				    o->OnSpawn();
+
+				    stat("spawning extra motion wall");
+				    o = CreateObject(((x) * TILE_W) * CSFI, \
+										 ((y + TILE_H) * TILE_H) * CSFI, type,
+										 0, 0, dir, NULL, CF_NO_SPAWN_EVENT);
+				    o->id1 = id1;
+				    o->id2 = id2;
+				    o->flags |= flags;
+				
+				    ID2Lookup[o->id2] = o;
+				
+				    // now that it's all set up, execute OnSpawn,
+				    // since we didn't do it in CreateObject.
+				    o->OnSpawn();
+
+				    stat("spawning extra motion wall");
+				    o = CreateObject(((x+22) * TILE_W) * CSFI, \
+										 ((y + TILE_H) * TILE_H) * CSFI, type,
+										 0, 0, dir, NULL, CF_NO_SPAWN_EVENT);
+				    o->id1 = id1;
+				    o->id2 = id2;
+				    o->flags |= flags;
+				
+				    ID2Lookup[o->id2] = o;
+				
+				    // now that it's all set up, execute OnSpawn,
+				    // since we didn't do it in CreateObject.
+				    o->OnSpawn();
 				}
 
 			}
@@ -603,7 +659,7 @@ int x, y;
 	int h = backdrop[map.backdrop]->Height();
 	
 	int mapx = (map.xsize * TILE_W);
-	int mapy = (map.ysize * TILE_H);
+//	int mapy = (map.ysize * TILE_H);
 	// hack for ending Maze map
     if (game.curmap == 74)
     {
@@ -613,7 +669,7 @@ int x, y;
 
     if (game.curmap == 31 && widescreen)
     {
-        map.parscroll_y-= 36;
+//        map.parscroll_y-= 36;
 //        mapy+=64;
     }
 
@@ -628,7 +684,7 @@ int x, y;
 	{
 		for(x=0;x<SCREEN_WIDTH+map.parscroll_x; x+=w)
 		{
-		    if ( ((x - map.parscroll_x) < mapx) && ((y - map.parscroll_y) < mapy))
+//		    if ( ((x - map.parscroll_x) < mapx) && ((y - map.parscroll_y) < mapy))
 			DrawSurface(backdrop[map.backdrop], x - map.parscroll_x, y - map.parscroll_y);
 		}
 	}
